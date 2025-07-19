@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion,useScroll, useTransform, useSpring} from "motion/react"
+import {motion} from "motion/react"
 const ParallaxBackground = () => {
    
   return (
@@ -19,8 +19,6 @@ const ParallaxBackground = () => {
             />
             
 
-            <div/>
-            <div/>
 
         </div>
     </section>

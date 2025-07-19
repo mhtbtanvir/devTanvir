@@ -8,8 +8,8 @@ const HeroText = () => {
         visible: { opacity: 1, x: 0 },
     }
   return (
-    <div className="z-10 mt-40 text-center md:mt-40
-     md:text-left rounded-3xl
+    <div className="z-10 mt-20 md:mt-40 
+     text-left rounded-3xl
       bg-clip-text">
         {/*big Screen */}
         <div className=" flex-col hidden md:flex c-space">
@@ -53,10 +53,26 @@ const HeroText = () => {
                 
 
             </div>
+        <div className="mt-20 items-start hidden md:block">
+            <motion.a
+                href="/assets/Tanvir_CV.pdf"
+                download
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 2 }}
+                className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-2xl font-bold text-gray-900 rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+            >
+                <span className="flex gap-5 font-light  px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                Download CV
+                <ArrowDownTrayIcon className=" transform translate-y-1 translate-x-2 px-0.5 justify-center w-6 h-6" />
+
+                </span>
+            </motion.a>
+        </div>
             
         </div>
         {/*small Screen */}
-        <div className='flex-col flex space-c md:hidden'>
+        <div className='flex-col flex items-center space-c md:hidden'>
             <motion.h1 className='text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-teal-200 bg-clip-text'
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -76,13 +92,13 @@ const HeroText = () => {
                 transition={{ delay: 1.4, ease: "easeOut" }}
             >
                 <FlipWords
-                    words={["Secure", "Scalable", "Robust", "Modern", "Innovative"]}
-                    className='text-6xl font-black text-White'
+                    words={["Secure", "Scalable", "Robust", "Stylish","Intelligent", "Innovative"]}
+                    className='text-4xl font-black text-White'
                 />
                 
                 
             </motion.div>
-            <motion.p className='text-4xl font-black
+            <motion.p className='text-3xl font-black
                  text-neutral-300'
                  variants={variants}
                  initial="hidden"
@@ -91,44 +107,31 @@ const HeroText = () => {
                  Web Applications
             </motion.p>
 
-        </div>
-        {/* Download CV Button big */}
-        <div className="mt-20 ml-15 hidden md:block">
-        <motion.a
-            href="/assets/Tanvir_CV.pdf"
-            download
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 2 }}
-            className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-2xl font-bold text-gray-900 rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
-        >
-            <span className="flex gap-4 font-light relative px-8 py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-            Download CV
-            <ArrowDownTrayIcon className=" transform translate-y-1 translate-x-2  justify-center w-6 h-6" />
-
-            </span>
-        </motion.a>
-        </div>
-
+            
         {/* Small Screen Button */}
-        <div className="mt-12 ml-4 md:hidden">
+        <div className=" mt-12 items-center md:hidden ">
         <motion.a
             href="/assets/Tanvir_CV.pdf"
             download
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 2 }}
-            className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-2xl font-bold text-gray-900 rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+            className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-bold text-gray-900 rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
         >
-            <span className=" flex gap-4 font-light relative px-8 py-4 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+            <span className=" flex gap-4 font-light relative px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
         Download CV
-                <ArrowDownTrayIcon className=" transform translate-y-1 translate-x-2 justify-center w-6 h-6" />
+                <ArrowDownTrayIcon className="transform translate-y-1 translate-x-1 px-1 justify-center w-6 h-6" />
 
             
 
             </span>
         </motion.a>
         </div>
+
+        </div>
+        {/* Download CV Button big */}
+       
+
 
 
 
