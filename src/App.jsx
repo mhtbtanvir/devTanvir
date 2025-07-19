@@ -10,6 +10,9 @@ const App = () => {
 
       
       <Hero/>
+         
+    <section className ="min-h-screen"></section>
+
       {/* about section */}
       {/* projects section */}
       {/* contact section */}
