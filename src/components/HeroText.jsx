@@ -75,9 +75,9 @@ const HeroText = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 2 }}
-                className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-2xl font-bold text-gray-900 rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+                className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-2xl font-bold  rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
-                <span className="flex gap-5 font-light px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                <span className="flex gap-5 font-light px-4 py-2 transition-all ease-in duration-75 text-white bg-gray-900 rounded-md group-hover:bg-transparent">
                 Download CV
                 <ArrowDownTrayIcon className="transform translate-y-1 translate-x-2 px-0.5 justify-center w-6 h-6" />
                 </span>
@@ -133,9 +133,11 @@ const HeroText = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 2 }}
-                className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-bold rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 cursor-pointer"
+                className="relative inline-flex items-center justify-center p-1  overflow-hidden text-xl rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 "
+
+                area-label="Download CV"
             >
-              <span className="flex gap-4 font-light px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+              <span className=" text-white flex gap-4 font-light px-5 py-2 transition-all ease-in  bg-gray-900 rounded-md ">
                 Download CV
                 <ArrowDownTrayIcon className="transform translate-y-1 translate-x-1 px-1 justify-center w-6 h-6" />
               </span>
