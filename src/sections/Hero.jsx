@@ -7,11 +7,10 @@ const Hero = () => {
     <section className='md:flex items-center justify-between
     md:items-start min-h-screen overflow-hidden
     c-space '>
-     
-    <HeroText />
-    
-   
+      
     <Dp/>
+    
+    <HeroText />
     
     <ParallaxBackground />
 

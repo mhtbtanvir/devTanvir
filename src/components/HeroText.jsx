@@ -22,11 +22,11 @@ const HeroText = () => {
 
 //   }
   return (
-    <div className="z-10 mt-20 md:mt-40 
+    <div className=" z-10 mt-10 md:mt-40 
      text-left rounded-3xl
       bg-clip-text">
         {/*big Screen */}
-        <div className=" flex-col hidden md:flex c-space">
+      <div className=" flex-col hidden md:flex c-space">
             <motion.h1 
             className= "text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-teal-100 bg-clip-text" 
             initial={{ opacity: 0, x: -50 }}
@@ -37,6 +37,7 @@ const HeroText = () => {
                 
                 Hi I'm Tanvir 
             </motion.h1>
+
             <div className='flex flex-col items-start'>
                 <motion.p className='text-5xl font-medium text-neutral-300'
                 variants={variants}
@@ -62,7 +63,7 @@ const HeroText = () => {
                initial="hidden"
                animate="visible"
                transition={{ delay: 1.8, ease: "easeOut" }}>
-                Web Solutions
+                Web Solutions.
                </motion.p>
                 
 
@@ -81,69 +82,70 @@ const HeroText = () => {
                 <ArrowDownTrayIcon className="transform translate-y-1 translate-x-2 px-0.5 justify-center w-6 h-6" />
                 </span>
             </motion.a>
-            </div>
-            
         </div>
-        {/*small Screen */}
-        <div className='flex-col flex items-center space-c md:hidden'>
-            <motion.h1 className='text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-teal-200 bg-clip-text'
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.6}}
-            >Hi I'm Tanvir</motion.h1>
             
-            <motion.p className='text-5xl font-black text-neutral-300'
-                variants={variants}
-                initial="hidden"
-                animate="visible"
-                transition={{ delay: 1.2, ease: "easeOut" }}>Building
-            </motion.p>
-            <motion.div
-                variants={variants}
-                initial="hidden"
-                animate="visible"
-                transition={{ delay: 1.4, ease: "easeOut" }}
+      </div>
+      {/*small Screen */}
+         <div className='z-1  relative flex-col flex items-center space-c md:hidden'>
+              <motion.h1 className=' text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-teal-200 bg-clip-text'
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.6}}
+              >Hi I'm Tanvir
+              </motion.h1>
+             <div className=' flex py-7 flex-col items-center '>
+              <motion.p className='text-5xl font-black text-neutral-300'
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.2, ease: "easeOut" }}>
+                   I Develop
+              </motion.p>
+              <motion.div
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.4, ease: "easeOut" }}
+              >
+                  <FlipWords
+                      words={["Secure", "Scalable", "Robust", "Stylish","Intelligent", "Innovative"]}
+                      className='text-4xl font-black text-white'
+                  />
+                  
+                  
+              </motion.div>
+              <motion.p className='text-3xl font-black
+                  text-neutral-300'
+                  variants={variants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.8, ease: "easeOut" }}>
+                  Web Applications!
+              </motion.p>
+
+              </div>
+          
+            {/* Small Screen Button */}
+          <div className=" mt-5 flex items-center md:hidden">
+            <motion.a
+              href="/assets/Tanvir_CV.pdf"
+                  download
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 2 }}
+                className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-bold rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 cursor-pointer"
             >
-                <FlipWords
-                    words={["Secure", "Scalable", "Robust", "Stylish","Intelligent", "Innovative"]}
-                    className='text-4xl font-black text-white'
-                />
-                
-                
-            </motion.div>
-            <motion.p className='text-3xl font-black
-                 text-neutral-300'
-                 variants={variants}
-                 initial="hidden"
-                 animate="visible"
-                 transition={{ delay: 1.8, ease: "easeOut" }}>
-                 Web Applications
-            </motion.p>
+              <span className="flex gap-4 font-light px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+                Download CV
+                <ArrowDownTrayIcon className="transform translate-y-1 translate-x-1 px-1 justify-center w-6 h-6" />
+              </span>
+            </motion.a>
+    
 
-            
-        {/* Small Screen Button */}
-          {/* Small Screen Button */}
-        <div className="mt-12 z-20 flex items-center md:hidden">
-          <motion.a
-            href="/assets/Tanvir_CV.pdf"
-                download
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 2 }}
-              className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-xl font-bold rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 cursor-pointer"
-          >
-            <span className="flex gap-4 font-light px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-              Download CV
-              <ArrowDownTrayIcon className="transform translate-y-1 translate-x-1 px-1 justify-center w-6 h-6" />
-            </span>
-          </motion.a>
-   
+          </div>
 
         </div>
-
-        </div>
-        {/* Download CV Button big */}
-       
+        
 
 
 

@@ -30,7 +30,7 @@ const Navbar = () => {
     const[isOpen, setIsOpen] = React.useState(false);
   return (
     <div 
-        className='fixed inset-x-0 w-full 
+        className='fixed py-1 inset-x-0 w-full 
         z-20 backdrop-blur-lg
         bg-primary/40'>
 

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const HeroImageRight = () => {
   return (
- <div className="-z-50 relative mt-8 md:mt-40  ">
+ <div className="-z-50 relative mt-10 md:mt-40  ">
       {/* Image container: hidden on small/medium, visible on large+ */}
       <motion.div
         className="hidden md:block w-full h-[50vh] overflow-hidden rounded-xl shadow-xl"
@@ -19,7 +19,7 @@ const HeroImageRight = () => {
       </motion.div>
       {/* Image for small screens */}
             <motion.div
-            className=" block  md:hidden w-full justify-center  h-[40vh] overflow-hidden rounded-xl shadow-xl"
+            className=" block  md:hidden w-full justify-center  h-[40vh] rounded-xl overflow-hidden shadow-xl"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 2 }}

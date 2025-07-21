@@ -9,7 +9,7 @@ const ParallaxBackground = () => {
             <motion.div 
             className='absolute inset-0 w-full h-screen -z-50 opacity-50'
             style ={{
-                backgroundImage:"url(/assets/sky.jpg",
+                backgroundImage:"url(/assets/sky1.jpg",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
