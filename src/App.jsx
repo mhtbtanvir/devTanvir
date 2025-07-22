@@ -2,20 +2,20 @@ import React from 'react'
 import Navbar from './sections/Navbar.jsx'
 import Hero from './sections/Hero.jsx'
 import { Analytics } from "@vercel/analytics/react"
+import Contact from './sections/Contact.jsx'
 const App = () => {
   return (
     <div className='container mx-auto max-w-7xl'>
       {/*sections*/}
       <Navbar />
 
-      
       <Hero/>
-         
-    <section className ="min-h-screen"></section>
 
-      {/* about section */}
-      {/* projects section */}
-      {/* contact section */}
+      {/* about */}
+      {/* projects*/}
+      
+      <Contact/>
+      
       {/* footer */}
 
     </div>
