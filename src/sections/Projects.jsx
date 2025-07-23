@@ -1,7 +1,24 @@
 import React from 'react';
 import { myProjects } from '../constants';
 import { Particles } from '../components/Particles';
-
+import { g } from 'framer-motion/client';
+const icons = {
+    react: "/assets/logos/react.svg",
+    tailwindcss: "/assets/logos/tailwindcss.svg",
+    vite: "/assets/logos/vite.svg",
+    threejs: "/assets/logos/threejs.svg",
+    csharp: "/assets/logos/csharp.svg",
+    dotnet: "/assets/logos/dotnet.svg",
+    efcore: "/assets/logos/efcore.svg",
+    sqlserver: "/assets/logos/sqlserver.svg",
+    git: "/assets/logos/git.svg",
+    github: "/assets/socials/github-mark-white.svg",
+    vscode: "/assets/logos/vscode.svg",
+    azure: "/assets/logos/azure.svg",
+    stripe: "/assets/logos/stripe.svg",
+    auth0: "/assets/logos/auth0.svg",
+  
+}
 const Projects = () => {
   return (
     <div className="relative container mx-auto bg-aqua/5 p-10  rounded-2xl shadow-2xl mt-30 ">
@@ -82,7 +99,7 @@ const Projects = () => {
                      border
                         border-royal/30 hover:bg-gray-800
                          text-md px-5 py-1.5 rounded-lg  transition">
-                        <img src="../public/assets/socials/github-mark-white.svg" alt="GitHub" className="w-4 h-4" />
+                        <img src={icons.github} alt="GitHub" className="w-4 h-4" />
                     GitHub
                 </a>
         )}
