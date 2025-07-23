@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Alert from '../components/Alert';
+import { Particles } from '../components/Particles';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -66,10 +67,16 @@ const Contact = () => {
 
   return (
   <section className='relative flex items-center
-    c-space section-spacing ' >
+    c-space section-spacing  rounded-2xl shadow-2xl' >
     {showAlert && < Alert text={alertMessage}  type ={alertType} />}
-      <div className ="flex flex-col items-center justify-center 
-        max-w-md p-5 mx-auto  border border-white/10 rounded-2xl bg-primary ">
+    <Particles
+    className='absolute inset-0 -z-10'
+    quantity={100}
+    ease={80}
+    color={"#ffffff"}
+    refresh/>
+      <div className =" mt-20flex flex-col items-center justify-center 
+        max-w-md p-5 mx-auto  border border-white/10 rounded-2xl bg-[#07071a]  ">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Lets Have a Chat..</h2>
           <p classname=" font-normal text-neutral-400"> 
