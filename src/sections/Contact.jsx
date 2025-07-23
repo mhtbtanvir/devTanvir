@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Alert from '../components/Alert';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,17 +14,60 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value   //dynamic update
     });
-    
   }
 
-  const handleSubmit = (e) => {
+
+  const [isLoading, setIsLoading] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertType, setAlertType] = useState('');
+  
+  const showAlertMessage = (message, type) => {
+     setShowAlert(true);
+     
+    setAlertMessage(message);
+    setAlertType(type);
+   
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+  }
+   
+  //service_p8o6tk2
+  //template_95220yd
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     console.log(formData);
+    try {
+     await emailjs.send('service_p8o6tk2', 'template_95220yd', {
+      from_name: formData.name,
+      to_name: "Tanvir Mahtab",
+      from_email: formData.email,
+      message: formData.message,
+      to_email: "mhtbtanvir@gmail.com"
+    },"0A9kAOzLroXrwAy8_");
+    
+      setIsLoading(false);
+      showAlertMessage(" Message sent successfully", "success");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      })
+    } catch (error) {
+      setIsLoading(false);
+      console.log(error);
+      showAlertMessage(" Message failed to send", "error");}
+ 
+
   }
 
   return (
   <section className='relative flex items-center
     c-space section-spacing ' >
+    {showAlert && < Alert text={alertMessage}  type ={alertType} />}
       <div className ="flex flex-col items-center justify-center 
         max-w-md p-5 mx-auto  border border-white/10 rounded-2xl bg-primary ">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
@@ -70,7 +115,7 @@ const Contact = () => {
             </input>
           </div>
 
-           <div className= "mb-5">
+          <div className= "mb-5">
             <label htmlFor="message" className="field-label"> Message</label>
             <textarea
               id="message"
@@ -91,7 +136,9 @@ const Contact = () => {
           <button
             type="submit"
             className=" w-full px-1 py-3 text-xl
-            text-center cursor-pointer rounded-md bg-radial from-lavender to-royal hover-animation">Send
+            text-center cursor-pointer rounded-md bg-radial from-lavender to-royal hover-animation"
+           >
+            {isLoading ? "Sending..." : "Send"}
           </button>
 
         </form>
