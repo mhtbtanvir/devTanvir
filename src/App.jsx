@@ -5,22 +5,18 @@ import { Analytics } from "@vercel/analytics/react"
 import Contact from './sections/Contact.jsx'
 import Footer from "./sections/Footer.jsx"
 import Projects from './sections/Projects.jsx'
+import About from './sections/About.jsx'
 import { Particles } from './components/Particles.jsx'
 const App = () => {
   return (
-    <div className='relative container mx-auto max-w-7xl'>
-      <Particles
-                  className='absolute inset-0 -z-10'
-                  quantity={1000}
-                  ease={80}
-                  color={"#ffffff"}
-                  refresh
-      />
+    <div className=' container mx-auto max-w-7xl'>
+    
       {/*sections*/}
       <Navbar />
 
       <Hero/>
-
+      <About/>
+  
       <Projects/>
 
       {/* about */}

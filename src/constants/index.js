@@ -1,228 +1,95 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+    title: "Inventory Management System",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Fully responsive full-stack inventory tracking app with analytics dashboard and dark mode.",
+      "Built with Next.js and serverless Express backend hosted on Vercel.",
+      "Implemented PostgreSQL via Prisma ORM and hosted it on Railway.",
+      "Redux Toolkit handles real-time product state and chart data.",
+      "Supports CRUD operations, filtering, sorting, and interactive graphs."
     ],
-    githref: "https://gihub.com/mhtbtanvir",
-    livhref: "https://mhtbtanvir.github.io/ReactMovieApp/",
+    githref: "https://github.com/mhtbtanvir/NextInventoryApp",
+    livhref: "https://stockit-tm.vercel.app/",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/inventory.png",
     tags: [
-      {
-        id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
-      },
-      {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "Next.js", path: "/assets/logos/nextjs.svg" },
+      { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 3, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 4, name: "PostgreSQL", path: "/assets/logos/postgresql.svg" },
+      { id: 5, name: "Prisma", path: "/assets/logos/prisma.svg" }
     ],
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
-    description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+    title: "React Movie Discovery App",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Fully responsive movie browsing app using TMDB API with real-time search and search analytics via Appwrite.",
+      "Integrated TMDB API to fetch trending and searchable movie data.",
+      "Built reusable components (cards, search bar, theme toggle, spinner).",
+      "Implemented debounced input and search tracking using Appwrite.",
+      "Designed with responsive layout for mobile-first user experience."
     ],
-    href: "",
+    githref: "https://github.com/mhtbtanvir/ReactMovieApp",
+    livhref: "https://mhtbtanvir.github.io/ReactMovieApp/",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/movie-app.png",
     tags: [
-      {
-        id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 3, name: "TMDB API", path: "/assets/logos/api.svg" },
+      { id: 4, name: "Appwrite", path: "/assets/logos/appwrite.svg" },
+      { id: 5, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" }
     ],
   },
   {
     id: 3,
-    title: "Blazor Web App",
-    description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+    title: "Secure Hotel Booking Platform",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Fully responsive hotel reservation system with multi-factor authentication and SMS support.",
+      "Created a secure booking backend using PHP and MySQL.",
+      "Implemented OTP-based two-factor login and session management.",
+      "Added spam protection via SMS APIs.",
+      "Optimized for admin control, live availability checks, and booking records."
     ],
-    href: "",
+    githref: "https://github.com/mhtbtanvir/Secure-HMS",
+    livhref: "",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/hotel-booking.png",
     tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
-      },
-      {
-        id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "PHP", path: "/assets/logos/php.svg" },
+      { id: 2, name: "MySQL", path: "/assets/logos/mysql.svg" },
+      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 4, name: "HTML", path: "/assets/logos/html5.svg" },
+      { id: 5, name: "CSS", path: "/assets/logos/css3.svg" }
     ],
   },
   {
+
     id: 4,
-    title: "C++ Game Engine",
+    title: "Custom Transformer – NLP Project ",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "A custom Transformer built in TensorFlow for classifying movie reviews from IMDb with improved attention modeling.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "Implemented a custom Transformer model using TensorFlow.",
+      "Introduced Gaussian-scaled attention to enhance convergence speed.",
+      "Trained and evaluated using IMDb dataset with ~87% accuracy.",
+      "Focused on optimization, clarity, and performance of model layers."
     ],
-    href: "",
+    githref: "https://github.com/mhtbtanvir/ATRT-Transformer",
+    livhref: "",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/nlp-transformer.png",
     tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+      { id: 1, name: "Python", path: "/assets/logos/python.svg" },
+      { id: 2, name: "TensorFlow", path: "/assets/logos/tensorflow.svg" },
+      { id: 3, name: "Keras", path: "/assets/logos/keras.svg" },
+      { id: 4, name: "NumPy", path: "/assets/logos/numpy.svg" },
     ],
   },
 ];
+
 
 export const mySocials =
 [
