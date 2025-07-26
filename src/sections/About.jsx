@@ -44,7 +44,7 @@ const About = () => {
         <div className="flex flex-col gap-5 h-full">
             
         <div className="bg-gray-800/60 border
-        border-royal/50 rounded-3xl shadow-lg p-6
+        border-gray-400/50 rounded-3xl shadow-lg p-6
           flex flex-col h-full max-h-[28rem]">
           {/* Header */}
           <div className="flex items-center gap-2 font-serif text-2xl font-semibold mb-2">
@@ -68,7 +68,7 @@ const About = () => {
           </div>
 
               {/* Beyond the Code - grow to fill remaining space */}
-                    <div className="bg-gray-800/60 border border-royal/50 rounded-3xl shadow-lg p-6 flex flex-col max-h-[28rem] overflow-auto">
+                    <div className="bg-gray-800/60 border border-gray-400/50 rounded-3xl shadow-lg p-6 flex flex-col max-h-[28rem] overflow-auto">
                       <div className="flex items-center gap-2 font-serif text-2xl font-semibold mb-2">
                         <img src={icons.star} alt="star" className="w-5 h-5" />
                         Beyond the Code
@@ -104,7 +104,7 @@ const About = () => {
   {/* Right column */}
   <div className="flex flex-col gap-5 h-full">
     {/* My Toolbox - grow to fill remaining space */}
-<div className=" bg-gray-800/60 border border-royal/50 rounded-3xl shadow-lg p-5 flex flex-col max-h-[28rem] ">
+<div className=" bg-gray-800/60 border border-gray-400/50 rounded-3xl shadow-lg p-5 flex flex-col max-h-[28rem] ">
       <div className="flex items-center gap-2 font-serif text-2xl font-semibold mb-2">
         <img src={icons.star} alt="star" className="w-5 h-5 " />
         My Toolbox
@@ -126,7 +126,7 @@ const About = () => {
     </div>
 
     {/* Location / Map - natural height */}
-   <div className="h-full max-h-[27rem] bg-gray-800/60 border border-royal/50 rounded-3xl shadow-lg  flex flex-col items-center justify-center">
+   <div className="h-full max-h-[27rem] bg-gray-800/60 border border-gray-400/50 rounded-3xl shadow-lg  flex flex-col items-center justify-center">
   
   <div className="rounded-xl overflow-hidden w-full h-full bg-slate-700">
    <iframe

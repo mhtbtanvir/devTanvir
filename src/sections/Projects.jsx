@@ -54,7 +54,7 @@ const Projects = () => {
         {myProjects.map((project) => (
           <div
             key={project.id}
-            className="relative bg-gray-800/60 overflow-hidden flex flex-col items-center justify-around border border-royal/50 rounded-3xl shadow-lg hover:shadow-lavender/50 transition-shadow p-6"
+            className="relative bg-gray-800/60 overflow-hidden flex flex-col items-center justify-around border border-gray-400/50 rounded-3xl shadow-lg hover:shadow-lavender/50 transition-shadow p-6"
           >
             {/* Project Title */}
             <h3 className="text-2xl font-serif text-amber-50 font-semibold -mt-1 mb-3">
