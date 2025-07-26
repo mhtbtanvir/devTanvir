@@ -6,9 +6,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className=" px-4 md:px-20 md:py-10 pt-5 text-sm text-neutral-400">
+    <footer className=" px-4 md:px-20 md:py-10 pt-5 text-sm ">
       {/* Divider */}
-            <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-neutral-700 to-transparent mb-5" />
+            <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white to-transparent mb-5" />
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         {/* Terms and Privacy */}
         <div className="flex gap-3 items-center">
@@ -23,7 +23,7 @@ const Footer = () => {
             <button
               key={index}
               onClick={() => handleOpen(social.href)}
-              className="hover:opacity-80 transition p-1 rounded-full cursor-pointer"
+              className="hover:opacity-50 transition p-1 rounded-full cursor-pointer"
               aria-label={social.name}
             >
               <img

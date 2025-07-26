@@ -19,8 +19,13 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="#Contact">
+        <a className="nav-link" href="#contact" >
           Contact
+        </a>
+      </li>
+      <li className="nav-li">
+        <a className="nav-link" href="#social" >
+          Social
         </a>
       </li>
     </ul>
@@ -38,15 +43,19 @@ const Navbar = () => {
             <div className='flex items-center 
                  justify-between py-2 sm:py-0 '>
 
-                <a className="text-xl font-dancing
+                <button className="text-xl font-dancing
                     font-bold tracking-wide
                     text-neutral-400
                     hover:text-white 
                     drop-shadow-sm transition-all 
-                    duration-300">
+                    duration-300
+                    cursor-pointer"
+                      onClick={() => window.location.hash = "#home"}
+                    >
+                    
 
                     Tanvir Mahtab
-                </a>
+                </button>
                 <button onClick={() => setIsOpen(!isOpen)} 
                     className="flex cursor-pointer
                     text-neutral-400

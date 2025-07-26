@@ -54,22 +54,28 @@ const Projects = () => {
         {myProjects.map((project) => (
           <div
             key={project.id}
-            className="relative bg-gray-800/60 overflow-hidden flex flex-col items-center justify-around border border-gray-400/50 rounded-3xl shadow-lg hover:shadow-lavender/50 transition-shadow p-6"
+            className="relative bg-gray-800/60 overflow-hidden flex flex-col items-center justify-around border
+             border-gray-400/50 rounded-3xl
+              shadow-lg hover:shadow-lavender/50 transition-shadow p-6"
           >
             {/* Project Title */}
-            <h3 className="text-2xl font-serif text-amber-50 font-semibold -mt-1 mb-3">
+            <h3 className="text-2xl font-serif  text-amber-50 font-semibold -mt-1 mb-3">
               {project.title}
             </h3>
 
             {/* Decorative horizontal divider */}
-            <div className="w-full h-[1px] bg-gradient-to-r from-neutral-500 via-neutral-700 to-transparent mb-5" />
+              <div
+                className="w-[calc(100%+48px)] -mx-6 h-[0.5px]
+                bg-gradient-to-r from-neutral-600
+              via-neutral-300 to-neutral-600 mb-5"
+              />
 
             {/* Tags / Tech used */}
             <div className="flex flex-wrap items-center gap-2 mb-4">
               {project.tags.map((tag) => (
                 <span
                   key={tag.id}
-                  className="flex items-center gap-2 bg-black/30 px-2 py-1 rounded text-sm text-white"
+                  className="flex items-center gap-2 bg-gray-600 px-2 py-1 rounded text-sm text-white"
                 >
                   <img src={tag.path} alt={tag.name} className="w-4 h-4" />
                   {tag.name}

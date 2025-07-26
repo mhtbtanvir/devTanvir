@@ -110,13 +110,13 @@ const About = () => {
         My Toolbox
       </div>
       <p className="text-sm text-white/60 mb-4">
-        Technologies and tools I use to craft exceptional digital experiences.
+        Technologies and tools I love to use to build digital experiences.
       </p>
       <div className="flex flex-wrap gap-3">
         {toolboxItems.map((item) => (
           <div
             key={item.title}
-            className="flex items-center gap-2  border-1 border-cyan-600 text-white px-4 py-2 rounded-lg text-sm"
+            className="flex items-center gap-2  border-1 border-gray-500 text-white px-4 py-2 rounded-lg text-sm"
           >
             <img src={item.iconType} alt={item.title} className="w-5 h-5" />
             <span>{item.title}</span>

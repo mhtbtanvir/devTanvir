@@ -7,7 +7,7 @@ const Dp = () => {
       {/* Image container: hidden on small/medium, visible on large+ */}
       <motion.div
         className="hidden md:block w-full h-[50vh] overflow-hidden rounded-xl shadow-xl"
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2, ease: 'easeOut', delay: 1.5 }}
       >
@@ -20,7 +20,7 @@ const Dp = () => {
       {/* Image for small screens */}
             <motion.div
             className=" block  md:hidden w-full justify-center  h-[40vh] rounded-xl overflow-hidden shadow-xl"
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 2 }}
             >

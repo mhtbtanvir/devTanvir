@@ -1,32 +1,40 @@
 import React from 'react'
 import Navbar from './sections/Navbar.jsx'
 import Hero from './sections/Hero.jsx'
-import { Analytics } from "@vercel/analytics/react"
 import Contact from './sections/Contact.jsx'
 import Footer from "./sections/Footer.jsx"
 import Projects from './sections/Projects.jsx'
 import About from './sections/About.jsx'
+import { Analytics } from "@vercel/analytics/react"
 import { Particles } from './components/Particles.jsx'
+
 const App = () => {
   return (
-    <div className=' container mx-auto max-w-7xl'>
-    
-      {/*sections*/}
+    <div className='container mx-auto max-w-7xl'>
       <Navbar />
 
-      <Hero/>
-      <About/>
-  
-      <Projects/>
+      {/* Sections with IDs for scroll targeting */}
+      <section id="home">
+        <Hero />
+      </section>
 
-      {/* about */}
-      {/* projects*/}
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="work">
+        <Projects />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+       <section id="social">
+        <Footer />
+      </section>
+
       
-      <Contact/>
-
-      {/* Footer */}
-      <Footer/>
-
+      <Analytics />
     </div>
   )
 }
