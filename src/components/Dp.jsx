@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const HeroImageRight = () => {
+const Dp = () => {
   return (
  <div className="-z-50 relative mt-10 md:mt-40  ">
       {/* Image container: hidden on small/medium, visible on large+ */}
@@ -36,4 +36,4 @@ const HeroImageRight = () => {
   );
 };
 
-export default HeroImageRight;
+export default Dp;

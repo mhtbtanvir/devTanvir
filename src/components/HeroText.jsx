@@ -28,7 +28,7 @@ const HeroText = () => {
         {/*big Screen */}
       <div className=" flex-col hidden md:flex c-space">
             <motion.h1 
-            className= "text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-teal-100 bg-clip-text" 
+            className= "text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text" 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.8}}
@@ -75,7 +75,7 @@ const HeroText = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 2 }}
-                className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-2xl font-bold  rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 "
+                className="relative inline-flex items-center justify-center p-1 mb-2 me-2 overflow-hidden text-2xl font-bold  rounded-xl group bg-gradient-to-br from-indigo-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 "
             >
                 <span className="flex gap-5 font-light px-4 py-2 transition-all ease-in duration-75 text-white bg-gray-900 rounded-md group-hover:bg-transparent">
                 Download CV
@@ -87,7 +87,7 @@ const HeroText = () => {
       </div>
       {/*small Screen */}
          <div className='z-1  relative flex-col flex items-center space-c md:hidden'>
-              <motion.h1 className=' text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-teal-200 bg-clip-text'
+              <motion.h1 className=' text-4xl font-medium text-transparent bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text'
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6}}
@@ -133,7 +133,7 @@ const HeroText = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 2 }}
-                className="relative inline-flex items-center justify-center p-1  overflow-hidden text-xl rounded-xl group bg-gradient-to-br from-purple-600 to-blue-500 "
+                className="relative inline-flex items-center justify-center p-1  overflow-hidden text-xl rounded-xl group bg-gradient-to-br from-indigo-600 to-blue-500 "
 
                 area-label="Download CV"
             >
