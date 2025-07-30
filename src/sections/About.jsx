@@ -27,7 +27,7 @@ const toolboxItems = [
 const About = () => {
   return (
 
-<div className="relative container mx-auto max-w-5xl bg-aqua/5 p-6 rounded-2xl shadow-2xl mt-10">
+<div className="relative container mx-auto max-w-5xl bg-aqua/5 p-10 rounded-2xl shadow-2xl mt-10">
       {/* Header */}
       <div className="text-center">
         <h2 className="text-3xl font-bold text-white uppercase mb-2 tracking-widest font-serif">

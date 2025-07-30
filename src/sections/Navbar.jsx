@@ -36,27 +36,26 @@ const Navbar = () => {
   return (
     <div 
         className='fixed py-1 inset-x-0 w-full 
-        z-20 backdrop-blur-lg
-        bg-primary/40'>
+        z-20 backdrop-blur-xl rounded-b-lg 
+        bg-primary/20'>
 
         <div className='mx-auto c-space max-w-7xl '>
             <div className='flex items-center 
-                 justify-between py-2 sm:py-0 '>
+                 justify-between py-2 sm:py-1 '>
 
-                <button className="text-xl font-dancing
-                    font-bold tracking-wide
-                    text-neutral-400
-                    hover:text-white 
-                    drop-shadow-sm transition-all 
-                    duration-300
-                    cursor-pointer"
-                      onClick={() => window.location.hash = "#home"}
-                    >
-                    
-
+                  <a
+                    href="#home"
+                    className="text-xl font-dancing
+                      font-bold tracking-wide
+                      text-neutral-400
+                      hover:text-white 
+                      drop-shadow-sm transition-all 
+                      duration-300
+                      cursor-pointer nav-link"
+                  >
                     Tanvir Mahtab
-                </button>
-                <button onClick={() => setIsOpen(!isOpen)} 
+                  </a>
+                    <button onClick={() => setIsOpen(!isOpen)} 
                     className="flex cursor-pointer
                     text-neutral-400
                     hover:text-white 

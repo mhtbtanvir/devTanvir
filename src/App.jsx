@@ -6,7 +6,6 @@ import Footer from "./sections/Footer.jsx"
 import Projects from './sections/Projects.jsx'
 import About from './sections/About.jsx'
 import { Analytics } from "@vercel/analytics/react"
-import { Particles } from './components/Particles.jsx'
 
 const App = () => {
   return (
