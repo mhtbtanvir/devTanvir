@@ -27,7 +27,6 @@ const HeroText = () => {
       bg-clip-text">
         {/*big Screen */}
       <div className=" flex-col hidden md:flex c-space">
-        
             <motion.h1 
             className= "text-4xl font-medium text-transparent bg-gradient-to-r from-blue-200 to-gray-400 bg-clip-text" 
             initial={{ opacity: 0, x: -50 }}
