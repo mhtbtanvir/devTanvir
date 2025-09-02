@@ -58,7 +58,7 @@ export const myProjects = [
       "Fully responsive movie browsing app using TMDB API with real-time search and search analytics Using Superbase.",
       "Integrated TMDB API to fetch trending and searchable movie data.",
       "Built reusable components (cards, search bar, theme toggle, spinner).",
-      "Implemented debounced input and search tracking using Appwrite.",
+      "Implemented debounced input and search tracking using Supabase.",
       "Designed with responsive layout for mobile-first user experience."
     ],
     githref: "https://github.com/mhtbtanvir/ReactMovieApp",
