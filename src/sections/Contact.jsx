@@ -67,7 +67,7 @@ const Contact = () => {
 
   return (
   <section className='relative flex items-center
-    c-space section-spacing  rounded-2xl shadow-2xl' >
+   section-spacing  rounded-2xl shadow-2xl' >
     {showAlert && < Alert text={alertMessage}  type ={alertType} />}
     <Particles
     className='absolute inset-0 -z-10'
@@ -75,12 +75,12 @@ const Contact = () => {
     ease={80}
     color={"#ffffff"}
     refresh/>
-      <div className =" mt-20flex flex-col items-center justify-center 
-        max-w-md p-5 mx-auto  border border-white/10 rounded-2xl bg-[#07071a]  ">
+      <div className ="flex flex-col  items-center justify-center 
+        max-w-2xl m-h-xl p-10 mx-auto  border border-white/10 rounded-2xl bg-[#07071a]  ">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Lets Have a Chat..</h2>
           <p classname=" font-light text-neutral-400"> 
-            Whether You're looking for a software Engineer/Web Developer to hire,
+            Whether You're looking for a software Engineer/Web Developer,
             or want to create a new web platform or in need of a collaborator,
             a partner in web developement.
             Even if you like my work or have any 

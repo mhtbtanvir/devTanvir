@@ -55,7 +55,7 @@ export const myProjects = [
     id: 3,
     title: "React Movie Discovery App",
     subDescription: [
-      "Fully responsive movie browsing app using TMDB API with real-time search and search analytics Using Superbase.",
+      "Fully responsive movie browsing app with real-time search and search analytics Using Supabase.",
       "Integrated TMDB API to fetch trending and searchable movie data.",
       "Built reusable components (cards, search bar, theme toggle, spinner).",
       "Implemented debounced input and search tracking using Supabase.",

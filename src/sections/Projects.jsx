@@ -22,7 +22,7 @@ const icons = {
 
 const Projects = () => {
   return (
-    <div className="relative container mx-auto bg-aqua/5 p-10 rounded-2xl shadow-2xl mt-30 ">
+    <div className="relative container mx-auto bg-aqua/5 pt-10 p-10 rounded-2xl md:-mb-28 shadow-2xl mt-30 ">
       {/* Uncomment Particles component below if you want animated background particles */}
       {/* 
       <Particles
@@ -37,14 +37,14 @@ const Projects = () => {
 
       {/* Section Title */}
       <div className=" text-center">
-        <p className="mb-5 uppercase text-3xl font-serif font-bold tracking-widest text-white text-center drop-shadow-md">
+        <p className=" my-5 uppercase text-4xl font-serif font-bold tracking-widest text-white text-center drop-shadow-md">
           Featured Projects
         </p>
        
       
 
       {/* Introductory paragraph */}
-      <p className=" text-base text-white/60 italic tracking-wide mb-8 max-w-xl mx-auto">
+      <p className=" text-base pb-10 text-white/60 italic tracking-wide mb-8 max-w-xl mx-auto">
         I try to transform my ideas into engaging digital experiences. Each project is built with love, passion, and obsession.
       </p>
       </div>
