@@ -1,6 +1,36 @@
 export const myProjects = [
+
+
   {
-    id: 1,
+  id: 1,
+  title: "Shoppee - Full-Stack E-Commerce Platform",
+ subDescription: [ 
+  "Enterprise-grade full-stack responsive e-commerce platform with secure authentication, fast navigation, and robust admin tools.", 
+  "Advanced auth with OTP verification, JWT in HttpOnly cookies & Headers, and Redis-powered session & OTP caching.",
+   "Role-based access control (user/admin) and session management.", 
+   "Rich user experience with product filtering, wishlist, likes, reviews, smart search, cart with live details, and downloadable invoices.", 
+   "Admin panel with product CRUD, order management, and real-time sales analytics.", 
+   "Fast client-side routing via React Router DOM for smooth, reload-free navigation.", 
+   "Scalable architecture with responsive design and optimized performance across devices." 
+  ],
+
+  githref: "https://github.com/mhtbtanvir/Shoppee",
+  livhref: "https://shoppee-psi.vercel.app/",
+  logo: "",
+  image: "/assets/projects/Shoppee.png",
+  tags: [
+    { id: 1, name: "React (Vite)", path: "/assets/logos/react.svg" },
+    { id: 2, name: "Redux Toolkit", path: "/assets/logos/redux.svg" },
+    { id: 3, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+    { id: 4, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+    { id: 5, name: "Express.js", path: "/assets/logos/express.png" },
+    { id: 6, name: "MongoDB", path: "/assets/logos/mongodb.jpg" },
+    { id: 7, name: "Redis", path: "/assets/logos/redis.png" }
+  ],
+},
+
+  {
+    id: 2,
     title: "Inventory Management System",
     subDescription: [
       "Fully responsive full-stack inventory tracking app with analytics dashboard and dark mode.",
@@ -22,10 +52,10 @@ export const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "React Movie Discovery App",
     subDescription: [
-      "Fully responsive movie browsing app using TMDB API with real-time search and search analytics via Appwrite.",
+      "Fully responsive movie browsing app using TMDB API with real-time search and search analytics Using Superbase.",
       "Integrated TMDB API to fetch trending and searchable movie data.",
       "Built reusable components (cards, search bar, theme toggle, spinner).",
       "Implemented debounced input and search tracking using Appwrite.",
@@ -44,7 +74,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Secure Hotel Booking Platform",
     subDescription: [
       "Fully responsive hotel reservation system with multi-factor authentication and SMS support.",
@@ -67,7 +97,7 @@ export const myProjects = [
   },
   {
 
-    id: 4,
+    id: 5,
     title: "Custom Transformer – NLP Project ",
     description:
       "A custom Transformer built in TensorFlow for classifying movie reviews from IMDb with improved attention modeling.",
