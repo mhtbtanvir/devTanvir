@@ -71,7 +71,7 @@ const Contact = () => {
     {showAlert && < Alert text={alertMessage}  type ={alertType} />}
     <Particles
     className='absolute inset-0 -z-10'
-    quantity={100}
+    quantity={500}
     ease={80}
     color={"#ffffff"}
     refresh/>
@@ -79,7 +79,7 @@ const Contact = () => {
         max-w-md p-5 mx-auto  border border-white/10 rounded-2xl bg-[#07071a]  ">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Lets Have a Chat..</h2>
-          <p classname=" font-normal text-neutral-400"> 
+          <p classname=" font-light text-neutral-400"> 
             Whether You're looking for a software Engineer/Web Developer to hire,
             or want to create a new web platform or in need of a collaborator,
             a partner in web developement.
